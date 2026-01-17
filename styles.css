@@ -13,7 +13,9 @@
 *{box-sizing:border-box}
 body{
   margin:0;
-  background: radial-gradient(1200px 600px at 30% 20%, #1a1f44 0%, var(--bg) 55%);
+  background: url("forest.png") no-repeat center center fixed;
+  background-size: cover;
+
   color:var(--text);
   font-family: Arial, sans-serif;
   min-height:100vh;
@@ -25,7 +27,9 @@ body{
 
 .game{
   width:min(520px, 100%);
-  background: rgba(28,31,58,.92);
+ .game{
+  background: rgba(20,30,40,0.75);
+  backdrop-filter: blur(8px);
   border-radius:16px;
   padding:22px;
   box-shadow: 0 20px 60px rgba(0,0,0,.55);
