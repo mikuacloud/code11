@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>PyArcade ⚡</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
-
   <div class="game">
-    <h1>🎮 PyArcade</h1>
-    <p id="question">Carregando...</p>
-
-    <div class="buttons">
-      <button onclick="answer(true)">True</button>
-      <button onclick="answer(false)">False</button>
+    <div class="topbar">
+      <h1>🎮 PyArcade</h1>
+      <div class="hud">
+        <span>XP: <b id="xp">0</b></span>
+        <span>Combo: <b id="streak">0</b></span>
+        <span>Recorde: <b id="best">0</b></span>
+      </div>
     </div>
 
-    <p id="feedback"></p>
-   <p class="xp">
-  XP: <span id="xp">0</span> • Combo: <span id="streak">0</span> • Recorde: <span id="best">0</span>
-</p>
+    <div class="meta">
+      <span class="pill" id="world">Mundo 1</span>
+      <span class="pill" id="type">Saída</span>
+      <span class="pill" id="level">Fase 1/10</span>
+    </div>
 
+    <p class="prompt" id="prompt">Carregando...</p>
 
-  <!-- JS -->
-  <script src="app.js"></script>
+    <pre class="code" id="code"></pre>
+
+    <div class="choices" id="choices"></div>
+
+    <div class="feedback" id="feedback"></div>
+    <div class="explain" id="explain"></div>
+
+    <div class="actions">
+      <button id="btnNext" class="btn" disabled>Próxima</button>
+      <button id="btnReset" class="btn ghost">Reiniciar</button>
+    </div>
+  </div>
+
+  <script src="app.js?v=5"></script>
 </body>
 </html>
