@@ -26,14 +26,14 @@ body{
 }
 
 .game{
-  width:min(520px, 100%);
- .game{
+  width: min(520px, 100%);
   background: rgba(20,30,40,0.75);
   backdrop-filter: blur(8px);
-  border-radius:16px;
-  padding:22px;
+  border-radius: 16px;
+  padding: 22px;
   box-shadow: 0 20px 60px rgba(0,0,0,.55);
-  border:1px solid rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.06);
+
 }
 
 .topbar{
@@ -163,15 +163,4 @@ h1{margin:0;font-size:26px}
 .btn.ghost:hover{
   background: rgba(255,255,255,.08);
 }
-.game::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background: rgba(0,0,0,0.35);
-  border-radius:16px;
-  z-index:0;
-}
-.game > *{
-  position:relative;
-  z-index:1;
-}
+
